@@ -16,5 +16,5 @@ jobs:
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws-region: ${{ secrets.AWS_REGION }}
       - name: Create a Bucket
-        run: |s
+        run: |
           aws s3 mb s3://${{ github.event.inputs.bucketName }}
